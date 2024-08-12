@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平鎮源邸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <header class="header d-sm-block d-none">
+        <nav class="header_nav">
+            <ul class="d-flex align-items-center justify-content-center">
+                <li class="header_item" data-target="#building">建築美學</li>
+                <li class="header_item" data-target="#floor">家配格局</li>
+                <li class="header_item" data-target="#material">名品建材</li>
+                <li class="header_item" data-target="#map">生活機能</li>
+                <li class="header_item" data-target="#reserve">預約賞屋</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="kv">
+            <img class="kv_title" src="./public/img/title_1.svg" alt="">
+            <img class="kv_flower flower-1 d-sm-block d-none" src="./public/img/flower-1.png" alt="">
+            <img class="kv_flower flower-2 d-sm-block d-none" src="./public/img/flower-2.png" alt="">
+            <img class="kv_flower flower-1-m d-sm-none" src="./public/img/flower-1-m.png" alt="">
+            <img class="kv_flower flower-2-m d-sm-none" src="./public/img/flower-2-m.png" alt="">
+            <div class="d-flex align-items-center justify-content-center">
+                <h2 class="d-flex align-items-center kv_item">
+                    <span class="kv_bignum">5</span>
+                    <span class="kv_text">大房</span>
+                </h2>
+                <h2 class="d-flex align-items-center kv_item">
+                    <span class="kv_text">整層大主臥</span>
+                </h2>
+                <h2 class="d-flex align-items-center kv_item d-sm-flex d-none">
+                    <span class="kv_bignum small">85-100</span>
+                    <span class="kv_text small">坪</span>
+                </h2>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <h2 class="d-flex align-items-center kv_item">
+                    <span class="kv_bignum">6</span>
+                    <span class="kv_text">米面寬</span>
+                </h2>
+                <h2 class="d-flex align-items-center kv_item d-sm-none d-flex">
+                    <span class="kv_bignum small">85-100</span>
+                    <span class="kv_text small">坪</span>
+                </h2>
+                <h2 class="d-flex align-items-center kv_item d-sm-flex d-none">
+                    <span class="kv_text normal">崇友</span>
+                    <span class="kv_bignum">6</span>
+                    <span class="kv_text normal">人座</span>
+                    <span class="kv_text highlight">電梯豪墅</span>
+                </h2>
+            </div>
+            <img class="kv_line d-sm-none" src="./public/img/kv-line.png" alt="">
+            <div class="d-flex align-items-center justify-content-center">
+                <h2 class="d-flex align-items-center kv_item d-sm-none d-flex">
+                    <span class="kv_text normal">崇友</span>
+                    <span class="kv_bignum">6</span>
+                    <span class="kv_text normal">人座</span>
+                    <span class="kv_text highlight">電梯豪墅</span>
+                </h2>
+    
+            </div>
+        </div>
+    
+        <div class="building" id="building">
+            <img class="w-100 d-lg-block d-none" src="./public/img/building.png" alt="">
+            <img class="building_flower d-lg-block d-none" src="./public/img/building-flower.png" alt="">
+            <div class="building_text">
+                <h2 class="title">
+                    精工細琢<br class="d-lg-block d-none"><span class="d-lg-none title_divide"></span>國際品味美學
+                </h2>
+                <p class="content">
+                    低密度戶數規劃，放大生活隱私，寬裕空間，生活悠閒不擁擠，以電梯美墅，裝載著三代的幸福回憶，家庭的日常點滴，盡在平鎮源邸。
+                </p>
+                <p class="en">
+                    architectural<br class="d-lg-block d-none">
+                    aesthetic
+                </p>
+            </div>
+            <img class="w-100 d-lg-none building_pic-m" src="./public/img/building-pic.png" alt="">
+        </div>
+    
+        <div class="floor" id="floor">
+            <img class="floor_flower d-lg-block d-none" src="./public/img/floor-flower.png" alt="">
+            <div class="container">
+                <div class="d-lg-flex align-items-end mb-4">
+                    <h2 class="title me-5">
+                        全齡共好<span class="title_divide"></span>細品漫漫日常
+                    </h2>
+                    <p class="en">
+                        Enjoy Elegant Life
+                    </p>
+                </div>
+                <p class="content">
+                    觸動五感的寬闊居所，有天有地的起居空間，獨立庭園露台，沉浸四季之美。<br>透天4層電梯豪墅，6米大面寬，門前併排雙車位，間間套房規劃，起居間各有隱私更顯生活餘裕。一步一境，一邸美墅，惟您獨享。
+                </p>
+                <div class="swiper-container floor_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="floor_swiper_pic d-sm-block d-none" src="./public/img/floor-1.png" alt="">
+                            <img class="floor_swiper_pic d-sm-none" src="./public/img/floor-1-m.png" alt="">
+                            <h3 class="floor_swiper_text">B戶家具配置參考圖</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="floor_swiper_pic d-sm-block d-none" src="./public/img/floor-2.png" alt="">
+                            <img class="floor_swiper_pic d-sm-none" src="./public/img/floor-2-m.png" alt="">
+                            <h3 class="floor_swiper_text">D戶家具配置參考圖</h3>
+                        </div>
+                    </div>     
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="material-flower d-lg-none">
+            <p class="en">
+                Building materials
+            </p>
+            <img class="floor_flower d-lg-none" src="./public/img/material-flower.png" alt="">
+        </div>
+
+        <div class="material" id="material">
+            <img class="material_flower d-lg-block d-none" src="./public/img/material-flower.png" alt="">
+            <div class="container">
+                <div class="d-xl-flex align-items-start material_text">
+                    <div class="me-5">
+                        <h2 class="title">
+                            國際精品<br>
+                            輕奢訂製享受生活
+                        </h2>
+                        <p class="en big d-lg-block d-none">
+                            Building materials
+                        </p>
+                    </div>
+                    <p class="content">
+                        電梯客製雍容空間，安保建設薈萃<strong>國際知名建材品牌，</strong><br>
+                        賦予居家空間，成就美感歇心居所，形塑細緻而優雅的氛圍。
+                    </p>
+                </div>
+                <div class="material_content d-flex flex-wrap align-items-center">
+                    <div class="swiper-container material_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="material_swiper_pic">
+                                    <img src="./public/img/material-pic-1.png" alt="">
+                                    <p>情境示意圖   來源:虹牌油漆官網</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="material_swiper_pic">
+                                    <img src="./public/img/material-pic-2.png" alt="">
+                                    <p>情境示意圖   來源:三洋磁磚官網</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="material_swiper_pic">
+                                    <img src="./public/img/material-pic-3.png" alt="">
+                                    <p>情境示意圖</p>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="material_brand d-lg-block d-flex align-items-center justify-content-between">
+                        <div class="material_brand_item active">
+                            <img src="./public/img/material-brand-1.png" alt="">
+                        </div>
+                        <div class="material_brand_item">
+                            <img src="./public/img/material-brand-2.png" alt="">
+                        </div>
+                        <div class="material_brand_item">
+                            <img src="./public/img/material-brand-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="life-function d-lg-none">
+            <img class="life-function_flower d-lg-none" src="./public/img/floor-flower.png" alt="">
+            <p class="en">
+                life function
+            </p>
+        </div>
+
+        <div class="map" id="map">
+            <img class="map_flower d-lg-block d-none" src="./public/img/map-flower.png" alt="">
+            <div class="container d-xl-flex">
+                <div class="map_text">
+                    <h2 class="title">
+                        共馥都心<br>
+                        優雅移步完美日常
+                    </h2>
+                    <p class="en big d-lg-block d-none">
+                        life · function
+                    </p>
+                    <ul class="map_list">
+                        <li>
+                            以南勢重劃區為基底，<br>結合<strong>中壢x平鎮雙商圈</strong>
+                        </li>
+                        <li>
+                            約<strong>3分鐘接軌66快速道路，</strong><br>
+                            快速銜接61快速道路、國道三號，南來北往就近滿足</li>
+                        <li>
+                            約<strong>8分鐘北商大</strong>生活圈，機能豐富多樣，全面向滿足生活所需。
+                        </li>
+                    </ul>
+                </div>
+                <div class="map_pic">
+                    <img src="./public/img/map.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="reserve" id="reserve">
+            <img class="reserve_flower d-md-none" src="./public/img/reserve-flower.png" alt="">
+            <h2 class="title">預<span class="title_divide"></span>約<span class="title_divide"></span>賞<span class="title_divide"></span>屋</h2>
+            <form action="" class="reserve_form" onsubmit="sendEmail(); reset(); return false">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="reserve_form_item">
+                            <label for="">
+                                <span>姓</span>
+                                <span>名</span>
+                            </label>
+                            <input class="reserve_form_input" type="text" id="name" required>
+                        </div>
+                        <div class="reserve_form_item">
+                            <label for="">
+                                <span>手</span>
+                                <span>機</span>
+                            </label>
+                            <input class="reserve_form_input" type="number" id="phone" required>
+                        </div>
+                        <div class="reserve_form_item">
+                            <label for="">
+                                <span>居</span>
+                                <span>住</span>
+                                <span>地</span>
+                                <span>區</span>
+                            </label>
+                            <input class="reserve_form_input" type="text" id="area">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="reserve_form_remark">
+                            <textarea name="" cols="30" rows="8" id="remark" placeholder="請輸入你的留言(選填)"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button class="reserve_form_btn" type="submit"><span>立即預約</span></button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <img class="footer_flower" src="./public/img/footer-flower.png" alt="">
+            <div class="footer_top">
+                <h2>建案資訊</h2>
+                <div class="footer_inform">
+                    <div class="d-md-flex">
+                        <ul>
+                            <li>
+                                <p class="footer_inform_title">投資興建<img src="./public/img/divide-orange@2x.png" alt=""></p>
+                                <p class="footer_inform_content">安保建設企業有限公司</p>
+                            </li>
+                            <li>
+                                <p class="footer_inform_title">建築規劃<img src="./public/img/divide-orange@2x.png" alt=""></p>
+                                <p class="footer_inform_content">陳大榮建築師事務所</p>
+                            </li>
+                            <li>
+                                <p class="footer_inform_title">接待會館<img src="./public/img/divide-orange@2x.png" alt=""></p>
+                                <p class="footer_inform_content">桃園市平鎮區興東路二段</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p class="footer_inform_title">戶數規劃<img src="./public/img/divide-orange@2x.png" alt=""></p>
+                                <p class="footer_inform_content">4戶</p>
+                            </li>
+                            <li>
+                                <p class="footer_inform_title">樓層規劃<img src="./public/img/divide-orange@2x.png" alt=""></p>
+                                <p class="footer_inform_content">地上4層</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>Design By <a href="https://zhuliads.com/" target="_blank">Zhuli 築里整合行銷</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <div class="sideBtn d-xl-block d-flex">
+        <ul class="d-xl-block d-flex sideBtn_link">
+            <li>
+                <a href="" target="_blank">
+                    <img src="./public/img/fb@2x.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img src="./public/img/house@2x.png" alt="">
+                    <span>接待會館</span>
+                </a>
+            </li>
+            <li>
+                <a href="tel:" target="_blank">
+                    <img src="./public/img/phone@2x.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="d-xl-block d-flex sideBtn_top">
+            <li>
+                <a class="btn-top">
+                    <img src="./public/img/top@2x.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js?v=20240527"></script>
+    <script src="./public/js/index.js"></script>
+    <script>
+        var swiperFloor = new Swiper(".floor_swiper", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 800,
+        })
+
+        var swiperMaterial = new Swiper(".material_swiper", {
+            slidesPerView: 1,
+            effect: "fade",
+            speed: 800,
+            allowTouchMove: false,
+        })
+        $(".material_brand_item").click(function(){
+            $(this).addClass("active").siblings(".material_brand_item").removeClass("active");
+            let li_index = $(this).index();
+            swiperMaterial.slideTo(li_index, 1000, true);
+        })
+    </script>
+</body>
+</html>
