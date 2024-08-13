@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="sendEmail(); reset(); return false">
+        <input type="text" id="text">
+        <button type="submit">送出</button>
+    </form>
+    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
+    <script>
+        const form = document.querySelector('#contact-form');
+
+
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+            const email = {
+                to: 'yl301114@gmail.com',
+                subject: 'Test email',
+                text: 'Email content here'
+            }
+
+            smtp.sendMail(email)
+                .then(() => form.reset())
+                .catch(err => console.error(err))
+        });
+    </script>
+</body>
+</html>
