@@ -14,20 +14,17 @@ $font-serif: 'Noto Serif TC', sans-serif;
 body {
     font-family: 'Noto Sans TC', sans-serif;
     color: $secondary-500;
-    // background-color: $secondary-500;
-    background-image: url(../img/footer_bg.png), url(../img/bg.png);
+    background-image: url(../img/footer_bg.png), url(../img/bg.webp);
     background-size: 100%, 100%;
     background-position: center calc(100% - 44px), 0 0;
     letter-spacing: 0.03em;
     background-repeat: no-repeat, repeat;
-    // overflow: hidden;
-    // height: 2000px;
     @media screen and (max-width: 1199px) {
         padding-bottom: 65px;
         background-position: center calc(100% - 104px), 0 0;
     }
     @media screen and (max-width: 991px) {
-        background-image: url(../img/bg.png);
+        background-image: url(../img/bg.webp);
         background-size: 100%;
         background-position: 0 0;
         background-repeat: repeat;
@@ -57,7 +54,6 @@ input, textarea, button {
 
 main {
     overflow: hidden;
-    // padding-top: 44px;
     @media screen and (max-width: 767px) {
         padding-top: 0;
     }
@@ -83,6 +79,8 @@ main {
     position: relative;
     padding-bottom: 10px;
     width: fit-content;
+    display: flex;
+    align-items: center;
     &::after {
         position: absolute;
         content: "";
@@ -108,7 +106,7 @@ main {
         height: 25px;
         background-color: $primary-500;
         display: inline-block;
-        margin: 0 10px;
+        margin: 0 15px 0 10px;
     }
     @media screen and (max-width: 767px) {
         font-size: 30px;
@@ -133,8 +131,8 @@ main {
 
 .en {
     font-size: 24px;
-    color: $primary-500;
-    opacity: 0.2;
+    color: rgba(234, 87, 25, 0.2);
+    // opacity: 0.2 !important;
     letter-spacing: 0.2em;
     &.big {
         font-size: 30px;
@@ -737,7 +735,6 @@ main {
 .reserve {
     padding-bottom: 160px;
     position: relative;
-    // padding: 0 30px 160px;
     .title {
         text-align: center;
         margin: 0 auto 80px;
@@ -1085,7 +1082,6 @@ main {
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
-    // background-color: $primary-500;
     z-index: 20;
     overflow: hidden;
     &_top {
@@ -1105,7 +1101,6 @@ main {
         border-radius: 100px;
     }
     li {
-        // box-shadow: 0 0 5px rgba(0,0,0,0.2);
         position: relative;
         &:first-child {
             a {
@@ -1214,5 +1209,31 @@ main {
                 opacity: 1;
             }
         }
+    }
+}
+
+.flower {
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+.flower-2 {
+    animation: float2 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-8%);
+    }
+    100% {
+        transform: translateY(8%);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(-58%);
+    }
+    100% {
+        transform: translateY(-42%);
     }
 }
