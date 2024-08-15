@@ -96,6 +96,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 1.6;
 }
 
 .title::after {
@@ -443,8 +446,7 @@ main {
 }
 
 .building_pic-m {
-  -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -462,7 +464,7 @@ main {
 
 @media screen and (max-width: 991px) {
   .building {
-    padding: 100px 0 0;
+    padding: 100px 0 75px;
   }
   .building_text {
     width: 70%;
@@ -474,6 +476,11 @@ main {
   }
   .building .content {
     margin-bottom: 50px;
+  }
+  .building_flower {
+    width: 85%;
+    bottom: 23%;
+    right: -55%;
   }
 }
 
